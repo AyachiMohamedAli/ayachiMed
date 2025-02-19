@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Jeu du Chiffre Caché </h1>
+        <div id="difficulty-selection">
+            <p>Choisissez un niveau :</p>
+            <button onclick="startGame(1)">Facile (1-10, 6 essais)</button>
+            <button onclick="startGame(2)">Intermédiaire (1-50, 5 essais)</button>
+            <button onclick="startGame(3)">Difficile (1-100, 4 essais)</button>
+        </div>
+
+        <div id="game-container" style="display: none;">
+            <p id="instructions"></p>
+            <button id="checkGuess" onclick="checkGuess()">Let's startGame </button>
+            <button id="restart-btn" onclick="restartGame()" style="display: none;">Rejouer</button>
+        </div>
+    </div>
+    <script src="ex1.js"></script>
+
+
+</body>
+</html>
